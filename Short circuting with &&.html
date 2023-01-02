@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<script>
+	function wrong_way(age) {
+		if(age && age>17) {
+			alert(true);
+		}
+		else
+			alert(false);
+	}
+
+	function crct_way(age) {
+		return alert(age && age>17);
+	}
+</script>
+<body>
+	<input type="button"onclick="wrong_way(45);"value="Wrong Way">
+	<input type="button"onclick="crct_way(45);"value="Correct Way">
+</body>
+</html>

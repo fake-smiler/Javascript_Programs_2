@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Promises</title>
+</head>
+<script>
+	  let promise = new Promise(function(resolve,reject) {
+	  	reject("Sorry Some Error Occured");
+	  	resolve("Process is successful");
+	  }) 
+
+	  promise.then((value) => {
+	  	console.log(value);
+	  })
+
+	 .catch((err) => {
+	 	console.log(err);
+	 })
+</script>
+<body>
+<h1>Promises</h1>
+</body>
+</html>

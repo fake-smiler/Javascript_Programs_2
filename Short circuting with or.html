@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initile-scale=1">
+</head>
+<script>
+	function wrong_way(title) {
+		if(!title) {
+			title="Untitled Document";
+		}
+			alert(title);
+		
+	}
+
+	function corct_way(title) {
+		title=title || "Untitled Document";
+		alert(title);
+
+	}
+</script>
+<body>
+	<input type="button"onclick="wrong_way();"value="Wrong way">
+	<input type="button"onclick="corct_way();"value="Correct way">
+</body>
+</html>

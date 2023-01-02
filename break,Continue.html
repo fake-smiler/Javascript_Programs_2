@@ -1,0 +1,85 @@
+<!--<DOCTYPE html>
+	<html>
+	<hedad>
+		<meta name="viewport"content="width=device-width,initial-scale=1">
+	</hedad>
+	<body>
+	<p>A loop with a break</p>
+
+	<p id="demo"></p>
+
+	<script>
+		var text = "";
+		var i;
+
+		for(i=0; i<10; i++) {
+			if(i==3) {break; }
+
+			text+="This number is " + i + "<br>";
+		}
+
+		document.getElementById("demo").innerHTML = text;
+	</script>
+</body>
+</html>-->
+
+<!--<br>
+<br>
+<br>
+<br>
+
+<DOCTYPE html>
+	<html>
+	<head>
+		<meta name="viewport"content="widht=devcie-width,initital-scale=1">
+	</head>
+	<body>
+		<p>A loop which will skip the step where i = 3.</p>
+		<p id="demo"></p>
+
+			<script>
+				var text = "";
+				var i;
+
+				for(i=0; i<10; i++) {
+					if(i==3) {continue;}
+
+					text+= "This number is " + i + "<br>;"
+				}
+				document.getElementById("demo").innerHTML = text;
+			</script>
+		</body>
+		</html>-->
+
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<p>JavaScript lables "break"</p>
+	<p id="demo"></p>
+
+	<script>
+		var cars = ["volvo","maruthi","bmw","sab"];
+		var text = "";
+
+		list: {
+			text+= cars[0] + "<br>";
+			text+= cars[1] + "<br>";
+
+		       break list;
+			text+= cars[2];
+			text+= cars[3];
+		}
+
+		document.getElementById("demo").innerHTML = text;
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Select Deselect Items</h1>
+</head>
+<body>
+	<select id="lstid" size="15"multiple="">
+		<option value="1">Ram</option>
+		<option value="2">Ajith</option>
+		<option value="3">Sathish</option>
+		<option value="4">Mani</option>
+		<option value="5">Nithya</option>
+		<option value="6">Kumar</option>
+		<option value="7">Mani</option>
+		<option value="8">Thastha</option>
+		<option vlue="9">Karthick</option>
+		<option value="10">Logesh</option>
+	</select>
+	<button type="button"onclick="listboxSelectDeselect(true);">Select all</button>
+	<button type="button"onclick="listboxSelectDeselect(false);">Deselect</button>
+<script>
+	function listboxSelectDeselect(isSelect) {
+		var listbox=document.getElementById("lstid");
+		for(var i=0; i<listbox.options.length;i++) {
+			listbox.options[i].selected=isSelect;
+		}
+
+	}
+</script>
+</body>
+</html>

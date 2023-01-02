@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+<h1>Dropdown List</h1>
+</head>
+<body>
+	<select id="ddl">
+		<option value="1"data-color="Yellow color">Banana</option>
+		<option value="2"data-color="Black color">Grapes</option>
+		<option value="3"data-color="Red color">Apple</option>
+		<option value="4"data-color="Orange color">Orange</option>
+	</select>
+	<br/>
+
+	<input type="button"onclick="chck_clr();"value="Get Color">
+	<script>
+		function chck_clr() {
+			var sel=document.getElementById('ddl');
+			var selected=sel.options[sel.selectedIndex];
+			var clr=selected.getAttribute('data-color');
+			alert(clr);
+		}
+	</script>
+</body>
+</html>

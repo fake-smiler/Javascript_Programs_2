@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h1>String On Decode</h1>
+	<h2>unescape()</h2>
+	<input type="button"onclick="stern();"value="String Decode">
+	<script>
+		function stern() {
+			var s1=unescape("abc123");
+			var s2=unescape("%E4%F6%FC");
+			var s3=unescape("%u0107");
+
+			alert("abc123 : " + s1);
+			alert("%E4%F6%FC : " + s2);
+			alert("%u0107 : " + s3);
+		}
+	</script>
+</body>
+</html>

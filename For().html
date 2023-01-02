@@ -1,0 +1,49 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width-device,width-initial-scale=1">
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script>
+		var cars = ["Volvo","Sab","BMW","Audi","Deniver","Maruthi"];
+		var i = 2;
+		var len = cars.length;
+		var text = "";
+
+		for(; i < len; i++) {
+			text += cars[i] + "<br>";
+		}
+
+	  document.getElementById("demo").innerHTML = text;
+
+	</script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>The for/in statement loops through the properties of an object.</h2>
+	<p id = "demo"></p>
+
+	<script>
+
+		var txt = "";
+		var person = {fname:"Ram",lname:"Chand",age:20};
+		var x;
+
+		for(x in person) {
+			txt+= person[x] + "";
+		}
+
+		document.getElementById("demo").innerHTML = txt;
+	</script>
+</body>
+</html>
+
+

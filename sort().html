@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h1>sort()</h1>
+	<button onclick="MyFunction();">Try it</button>
+	<p id="demo"></p>
+	<script>
+		var points = [1,233,32,45,67,100,102];
+
+		document.getElementById("demo").innerHTML = points;
+
+		function MyFunction() {
+			points.sort(function(a,b) {return b-a});
+
+			document.getElementById("demo").innerHTML = points;
+		}
+	</script>
+</body>
+</html>

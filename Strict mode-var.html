@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>"Strict" should declare the variable using var keyword</h1>
+</head>
+<body>
+	<input type="button"onclick="fun_strict();"value="Strict Mode">
+	<script>
+		function fun_strict() {
+			"use strict";
+			try {
+				a=90;
+			}
+			catch(err) {
+				alert("Error is : " + err.message);
+			}
+		}
+	</script>
+</body>
+</html>

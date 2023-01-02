@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Try Catch And Finally</h1>
+</head>
+<body>
+	<input type="button"onclick="fun_err();"value="Try Catch">
+	<script>
+		function fun_err() {
+			try {
+				alert(i); // i is not defined so error occurred
+			}
+
+			catch(err) {
+				alert("Error Is : " + err.message);
+			}
+
+			finally {
+				alert("Finally Excuted");
+			}
+		}
+	</script>
+</body>
+</html>

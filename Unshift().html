@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device,width-initial-scale=1">
+</head>
+<body>
+	<h1>Unshift()</h1><!--Add a new element-->
+
+	<p id="demo"></p>
+
+	<button onclick="MyFunction();">Try it</button>
+
+	<script>
+
+		var fruits = ["Banana","Apple","Orange","Mango"];
+
+		document.getElementById("demo").innerHTML = fruits;
+
+		function MyFunction() {
+			fruits.unshift("Papaya");
+
+			document.getElementById("demo").innerHTML = fruits;
+		}
+
+	</script>
+</body>
+</html>

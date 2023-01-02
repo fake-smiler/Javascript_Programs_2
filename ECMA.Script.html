@@ -1,0 +1,168 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>JavaScript Object.defineProperty()</h2>
+	<p id="demo"></p>
+	<script>
+
+		var obj = {
+			firstname:"Ram",
+			lastname:"Chandran",
+			age:21,
+			language:"En"
+		};
+
+		//Adding or changing an object property
+
+		Object.defineProperty(obj,"language",{value:"NO"});
+
+		document.getElementById("demo").innerHTML = obj;
+	</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>Object.getOwnPropertyNames()</h2>
+	<p id="demo"></p>
+	<script>
+		//create a object
+		var person = {
+			firstname:"Ram",
+			lastname:"chandran",
+			age:21,
+			language:"EN"
+		};
+
+		Object.defineProperty(person,"language",{enumerable:false});
+		//Display the properties
+		document.getElementById("demo").innerHTML = Object.getOwnPropertyNames(person);
+	</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device,width,initial-scale=1">
+</head>
+<body>
+	<h2>Object.keys(obj)</h2>
+	<p id="demo"></p>
+	<script>
+		//Create a object
+		var person = {
+			firstname:"Ram",
+			lastname:"Chandran",
+			age:21,
+			language:"EN"
+		};
+		//Change the property
+		Object.defineProperty(person,"language",{enumerable:false});
+		//Display property
+		document.getElementById("demo").innerHTML = Object.keys(person);
+	</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>Object.defineProperty()</h2>
+	<h3>This example adds a new property to an object</h3>
+	<p id="demo"></p>
+	<script>
+		//Create a object
+		var person = {
+			firstname:"Ram",
+			lastname:"Chandran",
+			age:21,
+			language:"EN"
+		};
+		//Add a new property
+		Object.defineProperty(person,"Year",{value:2008});
+		document.getElementById("demo").innerHTML = person.Year;
+	</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>JavaScript Object.defineProperty()</h2>
+	<p id="demo"></p>
+	<script>
+		var person = {
+			firstname:"Rama",
+			lastname:"chandran"
+		};
+		Object.defineProperty(person,"fullname",{
+			get: function() {return this.firstname + " " + this.lastname;}
+		});
+
+		document.getElementById("demo").innerHTML = person.fullname;
+	</script>
+</body>-->	
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>JavaScript Getters and Setters</h2>
+	<p id="demo"></p>
+	<script>
+		var obj = {counter:0};
+
+		//Define Getters and Setters
+
+		Object.defineProperty(obj,"reset",{
+			get:function(){this.counter=0;}
+		});
+
+		Object.defineProperty(obj,"increment",{
+			get:function(){this.counter++;}
+		});
+
+		Object.defineProperty(obj,"decrement",{
+			get:function(){this.counter--;}
+		});
+
+		Object.defineProperty(obj,"add",{
+			set:function(value){this.counter+=value;}
+		});
+
+		Object.defineProperty(obj,"subtract",{
+			set:function(value){this.counter-=value;}
+		});
+
+		obj.reset;
+		obj.add=8;
+		obj.subtract=5;
+		obj.increment;
+		obj.decrement;
+
+		document.getElementById("demo").innerHTML = obj.counter;
+	</script>
+</body>
+</html>	
+
+
+
+
+
+

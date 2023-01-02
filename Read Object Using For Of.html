@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Read Object Using For Of</h1>
+</head>
+<body>
+	<input type="button"onclick="read_ob();"value="For Of Array">
+	<script>
+		function read_ob() {
+			var ar_ob=[];
+
+			var obj=new Object()
+			obj.name="RAM";
+			obj.mark=78;
+			ar_ob.push(obj);
+
+			var obj=new Object()
+			obj.name="Ajith";
+			obj.mark=84;
+			ar_ob.push(obj);
+
+			var obj=new Object()
+			obj.name="Nithya";
+			obj.mark=79;
+			ar_ob.push(obj);
+
+			for(i of ar_ob) {
+
+				alert("Name : " + i.name);
+				alert("Mark : " + i.mark);
+			}
+		}
+	</script>
+</body>
+</html>

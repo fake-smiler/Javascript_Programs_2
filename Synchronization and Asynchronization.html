@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Synchronization And Asynchronization</title>
+</head>
+<script>
+	// Is this a synchronization.. default a javascript synchronization la than irrukum console x execute pannadhu apram than console y ennaku excute agum so this is called to synchronization..
+	/*function Javascript() {
+		var x = 10;
+		var y = 20;
+
+		console.log("x value " + x);
+		console.log("y value " + y);
+	}*/
+
+	function  Javascript() {
+		var x = 10;
+		var y = 20;
+
+		 console.log("x value : " + x);
+           //var t;
+		// Is this Asynchronization
+		 setTimeout(function() {
+			console.log("Iam Async");
+			//console.log(t + )
+		} , 3000);
+
+		 console.log("y value : " + y);
+	}
+	</script>
+<body>
+<h1>Synchronization And Asynchronization</h1>
+<button onclick = "Javascript();">Click Me!</button>
+</body>
+</html>

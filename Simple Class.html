@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Simple Class</h1>
+</head>
+<body>
+	<input type="button"onclick="call_cls();"value="Call Class Function">
+	<script>
+		function call_cls() {
+			class test {
+				fun_1() {
+					alert("Good");
+				}
+			}
+			var obj=new test();
+			obj.fun_1();
+		}
+	</script>
+</body>
+</html>

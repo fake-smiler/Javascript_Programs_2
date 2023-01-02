@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Variable Hoisting var and let</h1>
+</head>
+<body>
+	<input type="button"onclick="call_var();"value="Var">
+	<input type="button"onclick="call_let();"value="Let">
+	<script>
+		function call_var() {
+			alert(i);// Undefined Due to hoisting
+			var i=36;
+		}
+
+		function call_let() {
+			alert(k);//RefernceError: K is not found
+			let k=36;
+		}
+	</script>
+</body>
+</html>

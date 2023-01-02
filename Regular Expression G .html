@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-device=1">
+	<h1>Regular Expression G</h1>
+</head>
+<body>
+	<input type="button"onclick="regexpgno();"value="No G Regular Expression">
+	<input type="button"onclick="regexpg();"value="G Regular Expression">
+	<script>
+		var str="This is my apps";
+		function regexpgno() {
+			alert(str.replace(/s/,"#"));
+
+		}
+
+		function regexpg() {
+			alert(str.replace(/s/g,"#"));
+		}
+	</script>
+</body>
+</html>

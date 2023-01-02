@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initile-scale=1">
+	<h1>Move Up Down Items In List</h1>
+	<script>
+		function listbox(lst , direction) {
+			var listbox=document.getElementById(lst);
+			var selIndex=listbox.selectedIndex;
+			if(-1==selIndex) {
+				alert("Please select The Option And Move Up");
+				return;
+			}
+			var increment=-1;
+			if(direction=='up') 
+				increment=-1;
+			
+			else
+				increment=1;
+			if((selIndex + increment) < 0 ||
+				(selIndex + increment) > (listbox.options.length-1))
+			{
+				return;
+			}
+			var selValue=listbox.options[selIndex].value;
+			var selText=listbox.options[selIndex].text;
+			listbox.options[selIndex].value=listbox.options[selIndex + increment].Value
+			listbox.options[selIndex].text=listbox.options[selIndex + increment].text
+			listbox.options[selIndex + increment].value=selValue;
+			listbox.options[selIndex + increment].text=selText;
+			listbox.selectedIndex=selIndex+increment;
+
+
+
+		}
+
+	</script>
+</head>
+
+
+<body>
+	<select id="lst" size="15" multiple="">
+		<option value="1">Ram</option>
+		<option value="2">Ajith</option>
+		<option value="3">Sathish</option>
+		<option value="4">Mani</option>
+		<option value="5">Nithya</option>
+		<option value="6">Kumar</option>
+		<option value="7">Mani</option>
+		<option value="8">Thastha</option>
+		<option vlue="9">Karthick</option>
+	</select>
+	<input type="button"onclick="listbox('lst', 'up');"value="Move Up">
+	<input type="button"onclick="listbox('lst', 'down');"value="Move Down">
+</body>

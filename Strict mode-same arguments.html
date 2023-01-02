@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Strict mode-same arguments</h1>
+</head>
+<body>
+	<input type="button"onclick="fun_strict();"value="Strict">
+	<br/>
+	<b>Note:</b>This is example won't work because the function definition contain duplicate parmeter in strict mode.
+	<script>
+		"use strict";
+		function fun_strict(arg1,arg1) {
+			alert("Hi");//This is won't work because in strict mode same parameter.
+
+		}
+	</script>
+</body>
+</html>

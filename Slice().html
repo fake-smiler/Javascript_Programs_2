@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Slice() In Array</h1>
+</head>
+<body>
+	<input type="button"onclick="fun_1();"value="Slice(1)">
+	<input type="button"onclick="fun_2();"value="Slice(2,4)">
+	<script>
+		var fruits=["Jan","Feb","Mar","Apr"];
+		function fun_1() {
+			alert("Actual : " + fruits);
+			alert(fruits.slice(1));
+		}
+
+		function fun_2() {
+			alert("Actual : " + fruits);
+			alert(fruits.slice(2,4));
+		}
+	</script>
+</body>
+</html>
+

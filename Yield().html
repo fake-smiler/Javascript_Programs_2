@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Yield()</h1>
+</head>
+<body>
+	<input type="button"onclick="call_yield();"value="Yield Function">
+	<script>
+		function* fun() {
+			var index=0;
+			while(index<=2) {
+				yield index++;
+			}
+		}
+
+		function call_yield() {
+			var gen=fun();
+			alert(gen.next().value);
+			alert(gen.next().value);
+			alert(gen.next().value);
+			alert(gen.next().value);
+		}
+	</script>
+</body>
+</html>

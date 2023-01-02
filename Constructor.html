@@ -1,0 +1,86 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>Constructor function for object</h2>
+	<p id="demo"></p>
+	<script>
+              //Constructor function for Person object		
+		function Person(first,last,age,eye) {
+			this.firsname = first;
+			this.lastname = last;
+			this.age = age;
+			this.eyecolor = eye;
+
+		}
+               //create a Person object
+		var MyFather = new Person("Ram","Chandran",21,"blue")
+
+		document.getElementById("demo").innerHTML = "My Father age is " + MyFather.age + "."
+	</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>Constructor function for object</h2>
+	<p id="demo"></p>
+
+	<script>
+		//Constructor function for Person object
+		function Person(first,last,age,eye) {
+			this.firstname = first;
+			this.lastname = last;
+			this.age = age;
+			this.eyecolor = eye;
+		}
+
+		//create two Person object
+		var MyFather = new Person("Jhon","Doe",21,"blue");
+		var MyMother = new Person("Mia","Malkova",20,"grey");
+
+		MyFather.name = function() {
+			return this.firstname + " " + this.lastname;
+		}
+
+		MyFather.nationality = "English";
+
+		document.getElementById("demo").innerHTML = "My Father is " + MyFather.name() + " My Mother is " + MyMother.age + ".";
+	</script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta nname="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>Constructor function for Person object</h2>
+	<p id="demo"></p>
+	<script>
+
+		function Person(first,last,age,eye) {
+			this.firstname = first;
+			this.lastname = last;
+			this.age = age;
+			this.eyecolor = eye;
+			this.changeName = function (value) {
+				this.lastName = value;
+			}
+		}
+
+		var MyFather = new Person("Jhon","Doe",21,"blue");
+
+		MyFather.changeName	("Ram");
+
+		document.getElementById("demo").innerHTML = "My Father " + MyFather.lastName;
+	</script>
+</body>
+</html>

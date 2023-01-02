@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device,width-initial-scale=1">
+</head>
+<body>
+	<p>Enter a number click ok</p>
+	<input id="numb"type="number"min="100"max="300"required>
+	<button type="button"onclick="MyFunction();">OK</button>
+	<p id="demo"></p>
+	<script>
+		function MyFunction() {
+			var inpobj = document.getElementById("numb");
+			if(inpobj.checkValidity()) {
+				document.getElemenetById("demo").innerHTML = inpobj.validationMessage;
+			}
+			else {
+				document.getElementById("demo").innerHTML = "Input ok";
+			}
+		}
+	</script>
+	</body>
+	</html>

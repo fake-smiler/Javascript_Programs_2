@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Switch Statement</h1>
+</head>
+<body>
+	<input type="button"onclick="fun_sw();"value="Switch">
+	<script>
+		function fun_sw() {
+			var a=2;
+			switch(a) {
+				case 1 : //compare with a (2==1) false
+				alert("one");
+				break;
+
+				case 2 : //compare with a (2==1) true
+				alert("Two");
+				break;
+
+				case 3 : //compare with a (2==3) false
+				alert("Three");
+				break;
+
+				case 4 : //compare with a (2==4) false
+				alert("Four");
+				break;
+
+				default :
+				alert("Nothing was found");
+				break;
+			}
+		}
+	</script>
+</body>
+</html>

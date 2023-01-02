@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device,width-initial-scale=1">
+</head>
+<body>
+	<h1>Input validation</h1>
+	<p>Please input a number between 1 and 10</p>
+	<input id="numb">
+	<br>
+	<button type="button"onclick="MyFunction();">Submit</button>
+	<p id="demo"></p>
+
+	<script>
+		function MyFunction() {
+			var x, text;
+
+			x = document.getElementById("numb").value;
+
+			if(isNaN(x) || x<1 || x>10) {
+				text = "Input not valid";
+			}
+			else {
+				text = "input is OK";
+			}
+
+			document.getElementById("demo").innerHTML = text;
+		}
+	</script>	
+</body>
+</html>

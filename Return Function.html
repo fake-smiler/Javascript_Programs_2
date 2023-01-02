@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width-device-width,initial-scale=1">
+	<h1>Return Function</h1>
+</head>
+<body>
+	<input type="button"onclick="cal_fun();"value="Function Call">
+	<div id="ans"></div>
+	<script>
+		function cal_fun() {
+			var ret_val=ret_fun();
+			document.getElementById('ans').innerHTML = ret_val;
+		}
+		function ret_fun() {
+			var a= 20;
+			var b= 20;
+			var c= a+b;
+			return c;
+		}
+	</script>
+</body>
+</html>

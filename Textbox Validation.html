@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Textbox Validation</h1>
+</head>
+<body>
+	<input type="text"id="txt1"><br>
+	<button onclick="txt_val();">Text Validation</button>
+	<script>
+		function txt_val() {
+			var txtval=document.getElementById("txt1").value;
+			if(txtval=="") {
+				alert("This is empty");
+				return false;
+			}
+			else {
+				alert("Proceed to next step");
+			}
+		}
+	</script>
+</body>
+</html>

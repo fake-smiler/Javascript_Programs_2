@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Remainder Assingnment</h1>
+</head>
+<body>
+	<input type="button"onclick="simple_eg();"value="Simple Example">
+	<input type="button"onclick="detailed_eg();"value="Detailed Example">
+	<script>
+		function simple_eg() {
+			var a=5;
+			a%=3;
+			alert(a);
+		}
+
+		function detailed_eg() {
+			var bar=5;
+			bar%=4;
+			alert("bar(5) % 4 : " + bar);
+
+			bar%="foo";
+			alert("bar(5) % str(foo) : " + bar);
+		}
+	</script>
+</body>
+</html>

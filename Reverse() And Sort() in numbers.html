@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+	<h1>Reverse() And Sort()</h1>
+	<h2>Array Value=[1,50,4,56,100]</h2>
+</head>
+<body>
+	<input type="button"onclick="fun_1();"value="Normal Sort">
+	<input type="button"onclick="fun_2();"value="Normal Reverse">
+
+	<input type="button"onclick="fun_3();"value="Correct Sort">
+	<input type="button"onclick="fun_4();"value="Correct Reverse">
+	<script>
+		var ar_num=[1,50,4,56,100];
+		function fun_1() {
+			alert(ar_num.sort());
+		}
+
+		function fun_2() {
+			alert(ar_num.reverse());
+		}
+
+		function fun_3() {
+			ar_num.sort(function(a,b)
+			{
+				return a-b;
+			});
+			alert(ar_num);
+		}
+
+		function fun_4() {
+			ar_num.sort(function(a,b)
+			{
+				return b-a;
+			});
+			alert(ar_num);
+		}
+	</script>
+</body>
+</html>

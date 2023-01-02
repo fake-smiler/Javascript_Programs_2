@@ -1,0 +1,61 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>Prototype</h2>
+	<p id="demo"></p>
+	<script>
+
+		function Person(first,last,age,eye) {
+			this.firstname = first;
+			this.lastname = last;
+			this.age = age;
+			this.eyecolor = eye;
+			//this.nationality = "English";
+		}
+
+		var MyFather = new Person("Ram","Chandran",21,"blue");
+
+		//Person.nationality = "English";
+
+		//Prototype method
+
+		Person.prototype.nationality = "English";
+
+		document.getElementById("demo").innerHTML = "My Name is " + MyFather.nationality;
+	</script>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>Prototype</h2>
+	<p id="demo"></p>
+	<script>
+
+		function Person(first,last,age,eye) {
+			this.firstname = first;
+			this.lastname = last;
+			this.age = age;
+			this.eyecolor = eye;
+		}
+
+		var MyFather = new Person("Ram","Chandran",21,"blue");
+
+		//Prototype method
+
+		Person.prototype.name = function() {
+			return this.firstname + " " + this.lastname;
+		}
+
+		document.getElementById("demo").innerHTML = "My Name is " + MyFather.name();
+	</script>
+</body>
+</html>

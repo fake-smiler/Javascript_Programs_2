@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewpport"content="width=device-width,initial-scale=1">
+	<h1>Type OF Operator</h1>
+</head>
+<body>
+	<input type="button"onclick="typecal_opr();"value="Data Types">
+	<div id="d1"></div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+		<div id="d4"></div>
+		<div id="d5"></div>
+		<div id="d6"></div>
+		<script>
+			function typecal_opr() {
+				var num = 90;
+				var str = "My name";
+				var ar = [1,2,3];
+				var obj = {
+					a:"1",
+					b:"2",
+					c:"3"
+				};
+				var bol=true;
+				document.getElementById('d1').innerHTML = typeof(num);
+				document.getElementById('d2').innerHTML = typeof(str);
+				document.getElementById('d3').innerHTML = typeof(ar);
+				document.getElementById('d4').innerHTML = typeof(obj);
+				document.getElementById('d5').innerHTML = typeof(bol);
+				document.getElementById('d6').innerHTML = typeof(novar);
+			}
+		</script>
+	</body>
+	</html>

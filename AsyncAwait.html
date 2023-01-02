@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Async & Await</title>
+ </head>
+ <script>
+ 	/*async function MyCall() {                // function excution ku munnadi async keyword use panna adhu eppavumea promise a return pannum 
+ 		return ("Hi Iam Ram");              // promise a .then .catch indha method a use panni handle pannalam...
+ 	}
+ 	//console.log(MyCall());
+ 	MyCall().then((value)=> {             // Promise la irruka value va .then through adhula irruka data va edukamudyum..
+ 		console.log(value);
+ 	});*/
+
+ 	//We used Async/Await
+
+ 	async function Async() {
+ 		try {
+ 		const Posts = await fetch("https://jsonplaceholder.typicode.com/posts/fhejfh");
+ 		if(Posts.ok === false) {
+ 			throw "Page 404 Error"
+ 		}
+ 		const parseData = await Posts.json();
+ 		console.log(parseData);
+ 	}
+ 	catch(err) {
+ 		console.log(err);
+ 	}
+ 	}  
+ 	Async();
+ </script>
+ <body>
+ 
+ </body>
+ </html>

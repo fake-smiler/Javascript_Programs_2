@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<heda>
+	<meta name="viewport"content="width=device,width-initial-scale=1">
+	</heda>
+	<body>
+		<h1>Replacing</h1>
+			<button onclick="MyFunction();">Try it</button>
+			<p id="demo">Fuck</p>
+			<script>
+				function MyFunction() {
+					var str=document.getElementById("demo").innerHTML;
+					var res=str.replace("Fuck","you");
+					document.getElementById("demo").innerHTML = res;
+				}
+			</script>
+		</body>
+		</html>

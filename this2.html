@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this keyword</title>
+</head>
+<h1 id="demo1"></h1>
+<h2 id="demo2"></h2>
+<script>
+	function myFun(a,b) {
+		console.log(this, a+b);
+	}
+	const obj = {
+		name:"Ram",
+	};
+	//myFun = myFun.bind(obj)
+	//myFun.call(obj,5,5)
+	myFun.apply(obj, [3,3])
+	myFun();
+	/*const person1 = {
+		name:"Ram",
+		age:22,
+		relation:function() {
+			return this.name;
+		}    
+	};
+
+	const person2 = {
+		name:"miku",
+		age:22,
+		relation:function() {
+			return this.name;
+		}
+	};
+	document.getElementById("demo1").innerHTML = person1.relation();
+	document.getElementById("demo2").innerHTML = person2.relation();*/
+	 
+	/*console.log(this)
+	const Ram = {
+		college:"AVIT",
+		study:"BCA",
+		excute() {
+			console.log(this)
+		},
+
+	};
+	Ram.title = function() {
+			console.log(this)
+		};
+
+		miku = function() {
+			console.log(this)
+		};
+		miku();
+	Ram.excute();*/
+
+
+	</script>
+<body>
+<h1>this keyword</h1>
+</body>
+</html>
